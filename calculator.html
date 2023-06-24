@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcistyle.css">
+</head>
+
+<body>
+    <section class="calculator">
+        <form id="display1">
+            <div class="dis">
+                <input type="text" name="mytext" placeholder="Enter the digits" id="a8">
+            </div>
+            <div id="a0">
+                <input type="button" value="AC" onclick="mytext.value =''"  id="a6" class="a7">
+                <input type="button" value="DEL" onclick="mytext.value = mytext.value.toString().slice(0,-1)" id="a6" class="a7">
+                <input type="button" value="%" onclick +=nag(); id="a6">
+                <input type="button" value="/" onclick="mytext.value +='/'" id="a6">
+            </div>
+            <div id="a1">
+                <input type="button" value="7" onclick="mytext.value +='7'" id="a6">
+                <input type="button" value="8" onclick="mytext.value +='8'" id="a6">
+                <input type="button" value="9" onclick="mytext.value +='9'" id="a6">
+                <input type="button" value="*" onclick="mytext.value +='*'" id="a6">
+            </div>
+            <div id="a2">
+                <input type="button" value="6" onclick="mytext.value +='6'" id="a6">
+                <input type="button" value="5" onclick="mytext.value +='5'" id="a6">
+                <input type="button" value="4" onclick="mytext.value +='4'" id="a6">
+                <input type="button" value="+" onclick="mytext.value +='+'" id="a6">
+            </div>
+            <div id="a3">
+                <input type="button" value="1" onclick="mytext.value +='1'" id="a6">
+                <input type="button" value="2" onclick="mytext.value +='2'" id="a6">
+                <input type="button" value="3" onclick="mytext.value +='3'" id="a6">
+                <input type="button" value="-" onclick="mytext.value +='-'" id="a6">
+            </div>
+            <div id="a4">
+                <input type="button" value="00" onclick="mytext.value +='00'" id="a6">
+                <input type="button" value="0" onclick="mytext.value +='0'" id="a6">
+                <input type="button" value="." onclick="mytext.value +='.'" id="a6">
+                <input type="button" value="=" onclick="mytext.value =eval(mytext.value)" id="a6">
+            </div>
+        </form>
+    </section>
+    <p></p>
+    <!-- <script>
+        function nag(){
+            var ans=document.getElementById(a8).innerHTML(document.write("a8"));
+            // onclick.nag(ans);
+        }
+    </script> -->
+</body>
+
+</html>
